@@ -86,6 +86,9 @@ jobs:
           working_directory: ios
 
       - run: 
+          command: gem install bundler:1.17.2
+      
+      - run: 
           command: bundle install
           working_directory: ios
 
