@@ -92,6 +92,9 @@ jobs:
           command: bundle install
           working_directory: ios
 
+      - run: 
+          command: bundle update fastlane
+
       - save_cache:
           key: bundle-v1-{{ checksum "ios/Gemfile.lock" }}-{{ arch }}
           paths:
